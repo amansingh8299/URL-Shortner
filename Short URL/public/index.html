@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1>
+        <form id="url-form">
+            <label for="url-input">Enter URL:</label>
+            <input type="text" id="url-input" placeholder="http://example.com" required>
+            <button type="submit">Shorten URL</button>
+        </form> 
+        <div id="result-container" style="display: flex; align-items: center; gap: 14.7rem; margin-top: 0.5rem;">
+            <div id="result"></div>
+            <button id="copy-button" style="display: none;">Copy</button>
+        </div>
+        <div id="analytics" class="analytics"></div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
